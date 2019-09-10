@@ -1,13 +1,28 @@
 <template>
   <div id="app">
+    <AppHeader />
     <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/message">Message</router-link>|
+      <router-link to="/">Home</router-link>
+      <router-link to="/message">Message</router-link>
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
+    <AppFooter />
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import { AppFooter, AppHeader } from '@/components'; // @ is an alias to /src
+
+@Component({
+  components: {
+    AppFooter,
+    AppHeader,
+  },
+})
+export default class App extends Vue {}
+</script>
 
 <style lang="scss">
 #app {
@@ -25,6 +40,7 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+    padding: 0 5px;
   }
 }
 </style>
