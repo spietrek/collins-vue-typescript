@@ -1,0 +1,70 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier"
+  ],
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  },
+  "rules": {
+    "arrow-return-shorthand": [true],
+    "await-promise": true,
+    "ban-types": [
+      true,
+      ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+      [
+        "Function",
+        "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
+      ],
+      ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+      ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+      ["String", "Avoid using the `String` type. Did you mean `string`?"],
+      ["Symbol", "Avoid using the `Symbol` type. Did you mean `symbol`?"],
+      ["Array", "Avoid using the `Array<T>` type. Use 'type[]' instead."]
+    ],
+    "curly": true,
+    "forin": true,
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    "match-default-export-name": false,
+    "max-classes-per-file": true,
+    "max-line-length": [true, 80],
+    "member-access": true,
+    "member-ordering": true,
+    "newline-before-return": true,
+    "no-angle-bracket-type-assertion": false,
+    "no-any": false,
+    "no-bitwise": true,
+    "no-boolean-literal-compare": true,
+    "no-consecutive-blank-lines": false,
+    "no-console": [true, "log", "debug", "info", "time", "timeEnd", "trace"],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-empty": false,
+    "no-implicit-dependencies": false,
+    "no-invalid-this": [true, "check-function-in-method"],
+    "no-magic-numbers": true,
+    "no-namespace": [true, "allow-declarations"],
+    "no-object-literal-type-assertion": true,
+    "no-require-imports": true,
+    "no-shadowed-variable": true,
+    "no-string-literal": true,
+    "no-unnecessary-initializer": true,
+    "object-literal-shorthand": true,
+    "object-literal-sort-keys": false,
+    "one-variable-per-declaration": false,
+    "ordered-imports": false,
+    "prefer-const": true,
+    "prefer-for-of": true,
+    "prefer-object-spread": true,
+    "prefer-template": true,
+    "prettier": [true, ".prettierrc"],
+    "quotemark": [true, "single", "jsx-double"],
+    "trailing-comma": true,
+    "unified-signatures": true,
+    "variable-name": false
+  }
+}
