@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/vue';
 import { linkTo } from '@storybook/addon-links';
 
 import Welcome from './Welcome';
-import HelloWorld from '../src/components/HelloWorld.vue';
+import HomeDetails from '../src/components/HomeDetails.vue';
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
   components: { Welcome },
@@ -12,15 +12,15 @@ storiesOf('Welcome', module).add('to Storybook', () => ({
 }));
 
 storiesOf('Hello', module)
-  .add('Hello World (without JSX)', () => ({
-    components: { HelloWorld },
-    template: '<HelloWorld msg="Welcome to a Vue.js + TypeScript App" />',
+  .add('Home Details (without JSX)', () => ({
+    components: { HomeDetails },
+    template: '<HomeDetails msg="Welcome to a Vue.js + TypeScript App" />',
   }))
-  .add('Hello World (with JSX)', () => ({
-    components: { HelloWorld },
+  .add('Home Details (with JSX)', () => ({
+    components: { HomeDetails },
     render(h) {
       return (
-        <HelloWorld msg="Welcome to a Vue.js + TypeScript App (using JSX)" />
+        <HomeDetails msg="Welcome to a Vue.js + TypeScript App (using JSX)" />
       );
     },
   }));

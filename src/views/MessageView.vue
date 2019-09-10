@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import MessageDetails from '@/components/MessageDetails.vue';
+import { MessageDetails } from '@/components';
 
 @Component({
   components: {
